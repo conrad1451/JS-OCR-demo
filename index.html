@@ -45,28 +45,42 @@
         <!----------------------------- STEP 1: OBTAINING IMAGE ------------------------------------>
 
         <div id="step1">
+            
+            
+            <!--- Camera image ---->
             <h1><i class="glyphicon glyphicon-camera"></i></h1>
 
+            
             <p class="lead">
                 Take a good picture of a huge, printed text.
+                
+                <!--- Question Mark and popup ---->
                 <i class="glyphicon glyphicon-question-sign help" data-placement="bottom"
                    data-content="<img src='img/step1.png' />" data-html="true"></i>
             </p>
 
+            
             <figure class="not-ready">
                 <video autoplay></video>
             </figure>
-
+            
+            <!--- Button to take photo ---->
             <button class="btn btn-lg btn-success" disabled id="takePicture">Take a picture</button>
+            
+            
         </div>
         
         <!----------------------------- STEP 2: IMAGE EFFECTS ------------------------------------>
         
         <div id="step2">
+            
+            <!--- Pencil image ---->
             <h1><i class="glyphicon glyphicon-pencil"></i></h1>
 
             <p class="lead">
                 Crop the picture and adjust it so that text is clearly visible.
+                
+                <!--- Question Mark and popup ---->
                 <i class="glyphicon glyphicon-question-sign help" data-placement="bottom"
                    data-content="<img src='img/step2.png' />" data-html="true"></i>
             </p>
@@ -76,11 +90,17 @@
                 <img src=""/>
             </figure>
 
+            
+            <!--- Brightness and Contrast sliders ---->
+            
             <p>Brightness: <input type="range" min="0" max="100" id="brightness" value="20"></p>
-
+            
             <p>Contrast: <input type="range" min="0" max="100" id="contrast" value="90"></p>
 
+            
+            <!--- Button to confirm image effects ---->
             <button class="btn btn-lg btn-success" id="adjust" disabled>Done</button>
+            
         </div>
         
         
@@ -114,6 +134,8 @@
     
     
     <!-------------------------------------- STEP INDICATION BAR -------------------------------------->
+    
+     <!---shows which step of the process that the user is on ---->
     
     <div class="header">
         <ul class="nav nav-pills pull-right">
